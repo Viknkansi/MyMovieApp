@@ -5,8 +5,8 @@ export default function RecipesCard() {
     <div className='w-[80%] mx-auto shadow-2xl '>
         <img src="images.jpeg" alt="" srcset="" className='w-full h-[300px] object-fit object-center '  />
       <div className='p-6'>
-      <span>Name: Rice</span><br />
-      <span>Rating: 3.5</span>
+      <h2>Name: Rice</h2>
+      <h2>Rating: 3.5</h2>
       </div>
     </div>
   )
