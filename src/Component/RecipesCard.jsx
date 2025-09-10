@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function RecipesCard() {
   return (
-    <div className='w-[80%] mx-auto shadow-2xl '>
+    <div className='w-[80%] mx-auto shadow-2xl  rounded-xl overflow-hidden'>
         <img src="images.jpeg" alt="" srcset="" className='w-full h-[300px] object-fit object-center '  />
       <div className='p-6'>
       <h2>Name: Rice</h2>
