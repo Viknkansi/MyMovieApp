@@ -11,9 +11,13 @@ export default function RecipesCard({ data }) {
       />
       <div className="p-6">
         <h2 className="font-semibold text-2xl">{data.name}</h2>
-        <h2 className="border w-fit px-2 py-0.5 bg-red-500 text-white rounded mb-2">
-          {data.rating}
-        </h2>
+        <h2 className="font-semibold text-2xl"> Difficulty:  {data.difficulty}</h2>
+        <h2 className="font-semibold text-2xl"> Cuisine: {data.cuisine}</h2>
+        <h2 className="font-semibold text-2xl">  Review: {data.reviewCount}</h2>
+        <h2 className="border w-fit px-2 py-0.5 bg-red-500 text-white rounded mb-2  mx-[90%] "> 
+          {data.rating} 
+        </h2> 
+        
       </div>
     </div>
   );
