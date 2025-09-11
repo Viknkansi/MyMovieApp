@@ -4,6 +4,7 @@ import Searchbar from "./Component/Searchbar";
 import RecipesCard from "./Component/RecipesCard";
 import Recipes from "./Component/Recipes";
 import { BrowserRouter, Route, Routes } from "react-router";
+import ReciepeDetails from "./Page/ReciepeDetails";
 
 export default function App() {
   return (
@@ -20,7 +21,8 @@ export default function App() {
               </div>
             }
           />
-        </Routes>
+          <Route path="/:id" element={<ReciepeDetails/>}/>
+        </Routes  >
       </BrowserRouter>
     </div>
   );

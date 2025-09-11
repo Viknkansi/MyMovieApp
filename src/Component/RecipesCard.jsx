@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router";
 
 export default function RecipesCard({ data }) {
   return (
@@ -17,6 +17,8 @@ export default function RecipesCard({ data }) {
         <h2 className="border w-fit px-2 py-0.5 bg-red-500 text-white rounded mb-2  mx-[90%] "> 
           {data.rating} 
         </h2> 
+        <Link to={`/${data.id}`} >Read more</Link>
+
         
       </div>
     </div>
