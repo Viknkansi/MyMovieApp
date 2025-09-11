@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 
 export default function ReciepeDetails() {
   const [Recipe, setRecipe] = useState({});
@@ -26,6 +26,9 @@ export default function ReciepeDetails() {
       <p> Name:{Recipe.name}</p>
       <p>Ingredient: {Recipe.ingredients} </p>
       <p>Instructions: {Recipe.instructions}</p>
+
+      <Link to="/" className="bg-red-500 text-white p-1 inline-block my-2 rounded"  >Go back</Link>
     </div>
+    
   );
 }
