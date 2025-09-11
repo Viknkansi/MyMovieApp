@@ -3,14 +3,25 @@ import Header from "./Component/Header";
 import Searchbar from "./Component/Searchbar";
 import RecipesCard from "./Component/RecipesCard";
 import Recipes from "./Component/Recipes";
+import { BrowserRouter, Route, Routes } from "react-router";
 
 export default function App() {
   return (
     <div>
-      <Header />
-      <Searchbar />
-
-      <Recipes />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <Header />
+                <Searchbar />
+                <Recipes />
+              </div>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
