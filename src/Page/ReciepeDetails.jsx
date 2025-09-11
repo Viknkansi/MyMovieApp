@@ -19,11 +19,11 @@ export default function ReciepeDetails() {
   }, []);
 
   return (
-    <div className="">
+    <div className="w-[80%] mx-auto shadow-2xl  rounded-xl overflow-hidden">
       <div>
         <img src={Recipe.image} alt="" />
       </div>
-      <p> Name:{Recipe.name}</p>
+      <p className="font-semibold"> Name:{Recipe.name}</p>
       <p>Ingredient: {Recipe.ingredients} </p>
       <p>Instructions: {Recipe.instructions}</p>
 
